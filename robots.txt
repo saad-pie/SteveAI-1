@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /config/
+
+# Link to your sitemap (Next step)
+Sitemap: https://steve-ai.netlify.app/sitemap.xml
