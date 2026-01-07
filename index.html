@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/assets/favicon.png">
   <link rel="canonical" href="https://steve-ai.netlify.app/" />
+  <link rel="manifest" href="/manifest.json">
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8398063285525284" crossorigin="anonymous"></script>
 
@@ -36,7 +37,7 @@
     "creator": {
       "@type": "Person",
       "name": "Saadpie",
-      "url": "https://github.com/saadpie"
+      "url": "https://github.com/Saadpie1"
     },
     "offers": {
       "@type": "Offer",
@@ -274,9 +275,9 @@
 
   <footer role="contentinfo">
     <div class="footer-links">
-        <a href="/privacy">Privacy Policy</a>
-        <a href="/terms">Terms of Service</a>
-        <a href="https://github.com/saadpie">GitHub</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://github.com/Saadpie1">GitHub</a>
         <a href="/contact">Support</a>
     </div>
     <p>© 2026 <strong>SteveAI</strong>. All Rights Reserved.</p>
@@ -284,7 +285,25 @@
   </footer>
 
   <script>
-    console.log("SteveAI SEO & Monetization Layer Active.");
+    if(!localStorage.getItem('steve_cookie_consent')){
+      const banner = document.createElement('div');
+      banner.id = 'cookie-banner';
+      banner.style.cssText = "position:fixed; bottom:20px; left:50%; transform:translateX(-50%); width:90%; max-width:600px; background:#1a1a1a; color:#fff; padding:20px; text-align:center; border:1px solid #00ffcc; border-radius:12px; z-index:9999; box-shadow: 0 0 20px rgba(0,255,204,0.3);";
+      banner.innerHTML = `
+        <p style="margin:0 0 15px 0; font-size:0.9rem;">SteveAI uses cookies to analyze traffic and optimize your experience with our 100+ AI models. We also use AdSense to keep the platform free.</p>
+        <button onclick="acceptCookies()" style="background:#00ffcc; border:none; padding:10px 25px; border-radius:6px; cursor:pointer; font-weight:bold; color:#000; transition:0.3s;">Accept & Orchestrate</button>
+      `;
+      document.body.appendChild(banner);
+    }
+
+    function acceptCookies() {
+      localStorage.setItem('steve_cookie_consent', 'true');
+      document.getElementById('cookie-banner').style.display = 'none';
+      console.log("SteveAI Cookie Consent Accepted.");
+    }
+
+    console.log("SteveAI SEO, Monetization & Legal Layers Active.");
   </script>
 </body>
-</html>
+  </html>
+  
