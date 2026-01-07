@@ -1,51 +1,74 @@
-# SteveAI
+# 🌌 SteveAI – Ultimate AI Assistant 🌌
+**The World's Most Powerful Multi-Modal AI Orchestrator**
 
-**The bot from the future.**
+[![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fsteve-ai.netlify.app)](https://steve-ai.netlify.app)
+[![Version](https://img.shields.io/badge/Version-4.0_Alpha-00ffcc?style=for-the-badge)](https://steve-ai.netlify.app)
+[![Maintained by](https://img.shields.io/badge/Orchestrated_by-Saadpie_%26_Ahmed-ff00ff?style=for-the-badge)](https://github.com/saadpie)
 
-SteveAI is an advanced AI system designed to assist, create, and evolve — a digital mind from the future.  
-Powered by **SteveAI-General 2025**, it surpasses Grok 4 0709 in reasoning, speed, and creativity.
-
----
-
-## 🌐 Website
-[https://steve-ai.netlify.app](https://steve-ai.netlify.app)
-
-## ⚡ Features
-- 💬 **AI Chat:** Multi-step reasoning and deep context understanding  
-- 💻 **AI Coding:** Generate, debug, and improve code with intelligence  
-- 🖼️ **Image Generation:** Turn text prompts into stunning visuals  
-- 🧠 **Advanced Reasoning:** Faster, smarter, and more creative than any previous model  
-- 🎯 **Command System:** /clear, /theme, /help, /image, /export, /contact, /play  
-- 🌙 **Dark/Light Theme Toggle**  
-- 📦 Export chats as `.txt` or `.json`  
-- 📧 Integrated contact via **saadabdulrehman2010@gmail.com**  
-- 📝 Markdown & syntax highlighting support  
+SteveAI is not just a chatbot; it is a **Multi-Modal AI Orchestrator** designed for precision, efficiency, and industrial scale. By utilizing specialized model routing, SteveAI connects users to over **33 individual state-of-the-art AI models** across text, image, video, and 3D spatial generation.
 
 ---
 
-## 🧩 Getting Started
-1. Visit the [Chat page](https://steve-ai.netlify.app/chat.html) to start a conversation.  
-2. Explore features and usage in the [Docs](https://steve-ai.netlify.app/docs.html).  
-3. Generate creative visuals using the [Image Generator](https://steve-ai.netlify.app/image.html).  
+## 🚀 The Orchestration Advantage
+Unlike standard AI interfaces, SteveAI uses a proprietary **Precision Routing Engine**. 
+- **10+ Reasoning Engines:** Routes logic to models like GPT-5-Nano, Gemini 2.5 Flash, and DeepSeek-R1.
+- **23+ Visual Engines:** Specialized pipelines for RealVis XL, Juggernaut X, and Flux.1.
+- **Dynamic Scale:** Seamlessly manages 100+ conversational model variants.
+
+## ⚡ Core Modules
+- 🧠 **Reasoning & Logic:** Multi-step problem solving, advanced coding, and mathematical proofs.
+- 🎨 **Visual Arts:** Text-to-image generation with 23+ specialized artistic styles.
+- 🧊 **3D Sculptor (NEW):** Generate high-fidelity 3D spatial assets from text or 2D images.
+- 🎬 **Vid-Gen Alpha:** Native video generation with cinematic motion consistency.
+- 📂 **Context Memory:** Advanced session retention for complex, long-term projects.
+
+## 🛠️ Global Command System
+| Command | Action |
+| :--- | :--- |
+| `/clear` | Purge current session memory |
+| `/image` | Fast-track to the Visual Arts engine |
+| `/export` | Save workspace as `.txt` or `.json` |
+| `/theme` | Toggle between Ultra-Dark and Light UI |
+| `/play` | Interactive AI engagement mode |
 
 ---
 
-## 🚀 About SteveAI
-SteveAI-General is the next-generation reasoning model powering all AI experiences on the platform.  
-It offers:  
-- Ultra-fast logical reasoning and multi-step problem-solving  
-- Adaptive creativity and advanced AI decision-making  
-- Smarter conversational AI and context retention  
-- AI-assisted coding and image generation capabilities  
+## 🗣️ Featured Models
+### Conversational & Reasoning (100+)
+* **GPT-5-Nano:** The flagship for ultra-fast, high-logic tasks.
+* **Gemini 2.5 Flash:** Optimized for speed and massive context windows.
+* **DeepSeek-R1:** Specialized in deep chain-of-thought reasoning.
+* **Claude 4 / Llama 4:** Integrated for versatile creative writing.
 
-Created and maintained by [Saadpie](https://github.com/saad-pie), a young innovator exploring the edge of AI and self-advancing digital intelligence.
-
----
-
-## 📌 Contact
-For support or inquiries: **saadabdulrehman2010@gmail.com**
+### Visual & Spatial (23+)
+* **Hunyuan3D-2:** The primary engine for 3D asset sculpting.
+* **RealVis XL / Juggernaut X:** Hyper-realistic photographic generation.
+* **Playground V2.5:** Creative freedom for digital illustrators.
+* **NSFW-Safe Modules:** Specialized creative engines for all use cases.
 
 ---
 
-## 📘 Documentation
-Full documentation for commands, features, and the reasoning model: [Docs](https://steve-ai.netlify.app/docs.html)
+## 🌐 Getting Started
+1. **Live Platform:** [steve-ai.netlify.app](https://steve-ai.netlify.app)
+2. **Chat Dashboard:** [steve-ai.netlify.app/chat.html](https://steve-ai.netlify.app/chat.html)
+3. **3D Generation:** Explore the [3D Module](https://steve-ai.netlify.app/3d)
+
+---
+
+## 🏛️ Executive Leadership
+**SteveAI** is architected and maintained by:
+- **Saadpie** ([GitHub](https://github.com/saadpie)) – Core Orchestration & AI Logic
+- **Ahmed** – System Architecture & Module Integration
+
+*SteveAI is a Multi-Modal AI Orchestrator that uses over 33 individual AI models. Its core strength is specialized model routing for precision, efficiency, and scale.*
+
+---
+
+## 📘 Documentation & Legal
+For full API documentation, command guides, and licensing:  
+👉 [SteveAI Docs](https://steve-ai.netlify.app/docs.html)
+
+**Contact & Inquiries:** 📧 [saadabdulrehman2010@gmail.com](mailto:saadabdulrehman2010@gmail.com)
+
+---
+© 2026 **SteveAI** | Orchestrated by Saadpie & Ahmed.
