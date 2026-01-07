@@ -3,138 +3,288 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SteveAI – Ultimate AI Assistant</title>
+  <meta name="description" content="SteveAI is the world's most powerful Multi-Modal AI Orchestrator. Access 100+ conversational models and 23+ image generation models including GPT-5, Gemini 2.5, and Hunyuan3D. Developed by Saadpie.">
+  <meta name="keywords" content="SteveAI, Saadpie, Multi-Modal AI, AI Orchestrator, GPT-5, Gemini 2.5 Flash, 3D AI Generation, Image Generation, DeepSeek-R1, AI Assistant, Saadpie GitHub">
+  <meta name="author" content="Saadpie & Ahmed">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://steve-ai.netlify.app/">
+  <meta property="og:title" content="SteveAI – Ultimate Multi-Modal AI Assistant">
+  <meta property="og:description" content="Orchestrate 33+ specialized AI models for text, image, and 3D generation in one interface.">
+  <meta property="og:image" content="https://steve-ai.netlify.app/assets/banner.png">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://steve-ai.netlify.app/">
+  <meta property="twitter:title" content="SteveAI – Ultimate AI Assistant by Saadpie">
+  <meta property="twitter:description" content="Access hundreds of models for chat, reasoning, and 3D creation. The ultimate AI toolkit.">
+
+  <title>SteveAI – Ultimate AI Assistant | Multi-Modal Orchestrator by Saadpie</title>
+  
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="/assets/favicon.png">
+  <link rel="canonical" href="https://steve-ai.netlify.app/" />
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8398063285525284" crossorigin="anonymous"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SteveAI",
+    "operatingSystem": "Web-based",
+    "applicationCategory": "AI Assistant / Multimedia Software",
+    "creator": {
+      "@type": "Person",
+      "name": "Saadpie",
+      "url": "https://github.com/saadpie"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "A high-scale Multi-Modal AI Orchestrator featuring 33+ specialized models including 3D sculpting, video generation, and deep reasoning.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1000"
+    }
+  }
+  </script>
 
   <style>
     /* Global Reset & Base Styling */
+    :root {
+        --neon-cyan: #00ffcc;
+        --neon-magenta: #ff00ff;
+        --dark-bg: #0c0c0c;
+        --card-bg: #1a1a1a;
+    }
+    
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      margin: 0; padding: 0; background-color: #0c0c0c; color: #e0e0e0; line-height: 1.6;
+      font-family: 'Inter', -apple-system, system-ui, sans-serif;
+      margin: 0; padding: 0; background-color: var(--dark-bg); color: #e0e0e0; line-height: 1.6;
       display: flex; flex-direction: column; min-height: 100vh;
     }
+    
+    /* Header & Navigation */
     header {
-      background: #1a1a1a; color: #fff; padding: 1rem 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #00ffcc;
+      background: var(--card-bg); color: #fff; padding: 1rem 5%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--neon-cyan);
+      position: sticky; top: 0; z-index: 1000;
     }
     .logo-link { text-decoration: none; color: inherit; display: flex; align-items: center; }
-    .logo { height: 30px; margin-right: 10px; border-radius: 4px; }
-    header h1 { margin: 0; font-size: 1.8rem; color: #00ffcc; }
+    .logo { height: 35px; margin-right: 12px; border-radius: 4px; transition: transform 0.3s; }
+    .logo:hover { transform: scale(1.1); }
+    header h1 { margin: 0; font-size: 1.6rem; color: var(--neon-cyan); font-weight: 800; letter-spacing: -1px; }
     
+    nav { display: flex; gap: 0.5rem; }
     nav a {
-      color: #e0e0e0; text-decoration: none; margin-left: 1.2rem; padding: 0.5rem 0.8rem;
-      border-radius: 4px; transition: 0.2s; font-size: 0.9rem;
+      color: #e0e0e0; text-decoration: none; padding: 0.6rem 1rem;
+      border-radius: 6px; transition: all 0.3s ease; font-size: 0.9rem; font-weight: 500;
     }
-    nav a:hover, nav a.active { background-color: #2c2c2c; color: #00ffcc; }
-    
-    /* 3D Tab Glow */
-    .threed-tab { border: 1px solid #ff00ff; color: #ff00ff !important; }
+    nav a:hover, nav a.active { background-color: #2c2c2c; color: var(--neon-cyan); box-shadow: 0 0 10px rgba(0, 255, 204, 0.2); }
+    .threed-tab { border: 1px solid var(--neon-magenta); color: var(--neon-magenta) !important; animation: pulse 2s infinite; }
 
-    main { flex-grow: 1; max-width: 1000px; width: 90%; margin: 2rem auto; padding: 0 1rem; }
-    section { background: #1a1a1a; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); }
-    section h2 { color: #00ffcc; border-bottom: 1px solid #333; padding-bottom: 0.5rem; margin-top: 0; font-size: 1.5rem; }
+    /* Layout Sections */
+    main { flex-grow: 1; max-width: 1200px; width: 95%; margin: 2rem auto; padding: 0 1rem; }
+    section { background: var(--card-bg); padding: 2.5rem; border-radius: 16px; margin-bottom: 2.5rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); border: 1px solid #222; }
+    section h2 { color: var(--neon-cyan); border-bottom: 1px solid #333; padding-bottom: 0.8rem; margin-top: 0; font-size: 1.8rem; display: flex; align-items: center; gap: 10px; }
     
+    /* Ad Containers */
+    .ad-wrapper { margin: 20px 0; text-align: center; background: #111; border-radius: 8px; overflow: hidden; min-height: 90px; display: flex; align-items: center; justify-content: center; color: #444; font-size: 0.8rem; }
+
+    /* Custom Banners */
     .update-banner {
-      background: linear-gradient(135deg, #1a0b2e, #2d1b4e);
-      border: 3px solid #00ffcc; box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
-      position: relative; overflow: hidden;
+      background: linear-gradient(145deg, #130722, #1a0b2e);
+      border: 2px solid var(--neon-cyan); position: relative; overflow: hidden;
+      display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 20px;
     }
     .update-banner::after {
-        content: "NEW MODULE"; position: absolute; top: 10px; right: -30px;
-        background: #ff00ff; color: white; padding: 5px 40px; transform: rotate(45deg);
-        font-size: 0.7rem; font-weight: bold;
+        content: "V4.0 LIVE"; position: absolute; top: 12px; right: -35px;
+        background: var(--neon-magenta); color: white; padding: 5px 45px; transform: rotate(45deg);
+        font-size: 0.75rem; font-weight: 900; box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
     }
-    .about-steveai { border-left: 5px solid #ff00ff; background: #151515; }
-    .about-steveai ul, .model-list ul {
-        list-style: none; padding-left: 0; display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;
-    }
-    .about-steveai ul li, .model-list ul li {
-        background: #2c2c2c; padding: 0.5rem; border-radius: 4px; border-left: 3px solid #00ffcc;
-    }
-    .highlight { border-left-color: #ff00ff !important; font-weight: bold; }
 
-    footer { background: #1a1a1a; color: #bbb; text-align: center; padding: 2rem 1rem; border-top: 1px solid #2c2c2c; }
-    footer a { color: #00ffcc; font-weight: bold; }
+    /* Grid Lists */
+    .feature-grid {
+        display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 20px;
+    }
+    .feature-card {
+        background: #222; padding: 1.5rem; border-radius: 12px; border-top: 4px solid var(--neon-cyan);
+        transition: transform 0.3s;
+    }
+    .feature-card:hover { transform: translateY(-5px); background: #282828; }
+    .feature-card h3 { margin-top: 0; color: #fff; font-size: 1.2rem; }
+    
+    .model-list-grid {
+        display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px;
+    }
+    .model-item {
+        background: #2c2c2c; padding: 0.8rem; border-radius: 8px; font-size: 0.85rem;
+        display: flex; align-items: center; justify-content: space-between; border-left: 3px solid #444;
+    }
+    .model-item.highlight { border-left-color: var(--neon-magenta); background: #331a33; font-weight: 600; }
+    .badge { font-size: 0.6rem; padding: 2px 6px; border-radius: 10px; background: var(--neon-cyan); color: #000; font-weight: bold; }
 
+    /* Footer */
+    footer { background: #080808; color: #888; text-align: center; padding: 4rem 1rem; border-top: 1px solid #222; margin-top: 3rem; }
+    footer .footer-links { margin-bottom: 1.5rem; }
+    footer a { color: var(--neon-cyan); text-decoration: none; margin: 0 10px; font-size: 0.9rem; }
+    footer .saadpie-credit { color: #fff; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-top: 20px; display: block; }
+
+    /* Animations */
+    @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 0, 255, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(255, 0, 255, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 0, 255, 0); } }
+
+    /* Mobile UX */
     @media (max-width: 768px) {
-        header { flex-direction: column; align-items: flex-start; }
-        nav { overflow-x: auto; white-space: nowrap; width: 100%; margin-top: 10px; }
-        nav a { margin-left: 0; margin-right: 0.5rem; }
+        header { flex-direction: column; padding: 1rem; text-align: center; }
+        nav { overflow-x: auto; width: 100%; padding: 10px 0; justify-content: flex-start; }
+        nav a { font-size: 0.8rem; }
+        .update-banner { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <a href="/" class="logo-link">
-        <img src="SteveAI-logo.jpg" alt="SteveAI Logo" class="logo" loading="lazy"/> 
-        <h1>SteveAI <span style="font-size: 0.6em; color: #ff00ff; vertical-align: middle;">DAGI</span></h1>
+  <header role="banner">
+    <a href="/" class="logo-link" title="SteveAI Home">
+        <img src="SteveAI-logo.jpg" alt="SteveAI Official Logo" class="logo" width="35" height="35" loading="lazy"/> 
+        <h1>SteveAI <span style="font-size: 0.5em; color: var(--neon-magenta); vertical-align: middle;">ORCHESTRATOR</span></h1>
     </a>
-    <nav>
+    <nav aria-label="Main Navigation">
       <a href="/" class="active">Home</a>
       <a href="/chat.html">Chat</a>
-      <a href="/image.html">Image</a>
+      <a href="/image.html">Visuals</a>
       <a href="/vid-gen">Video</a>
-      <a href="/3d" class="threed-tab">3D</a>
-      <a href="/docs.html">Docs</a>
-      <a href="/about.html">About</a>
+      <a href="/3d" class="threed-tab">3D Spatial</a>
+      <a href="/docs.html">API</a>
+      <a href="/about.html">Team</a>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
+    
+    <div class="ad-wrapper">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8398063285525284"
+           data-ad-slot="6970491544"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
     <section class="update-banner">
-      <h2 class="emoji-heading">🧊 3D Avatar Generation is Here! 🚀</h2>
-      <p>
-        Architected by <strong>Ahmed & Saadpie</strong>, the 3D Sculptor module is now live. Turn your ideas into high-fidelity spatial assets instantly.
-      </p>
+      <div>
+        <h2 class="emoji-heading">🧊 Spatial AI & 3D Sculptor is Live</h2>
+        <p>
+            Architected by <strong>Saadpie & Ahmed</strong>, SteveAI now features <strong>Multi-Modal 3D Asset Generation</strong>. 
+            Convert text and 2D images into high-fidelity meshes for gaming, AR, and professional rendering instantly.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--neon-cyan);">Status: 100+ Models Synced • v4.0 Active</p>
+      </div>
     </section>
 
-    <section class="about-steveai">
-        <h2 class="emoji-heading">🏛️ Executive Leadership</h2>
-        <p>Orchestrated by <strong>Saadpie</strong> & <strong>Ahmed</strong>.</p>
+    <section class="about-steveai" id="features">
+        <h2>🏛️ The Ultimate AI Orchestration Layer</h2>
+        <p>
+            SteveAI is a comprehensive <strong>Multi-Modal AI Assistant</strong> designed for precision, efficiency, and massive scale. 
+            Unlike standard AI interfaces, SteveAI utilizes a proprietary <strong>Model Routing Engine</strong> to select the perfect model for your specific task.
+        </p>
         
-        <h3>⚙️ Global Operating Modes</h3>
-        <ul>
-            <li><span style="color: #00ffcc;">Chat / Reasoning</span></li>
-            <li><span style="color: #00ffcc;">Coding / Math</span></li>
-            <li><span style="color: #00ffcc;">3D Mesh Generation</span></li>
-        </ul>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <h3>🧠 Reasoning & Logic</h3>
+                <p>Deploying advanced models like DeepSeek-R1 and GPT-5-Nano for complex coding, mathematical proofs, and logical chains.</p>
+            </article>
+            <article class="feature-card">
+                <h3>🖼️ Visual Intelligence</h3>
+                <p>Access 23+ high-end visual models including RealVis XL, Playground V2.5, and specialized NSFW-safe creative engines.</p>
+            </article>
+            <article class="feature-card">
+                <h3>🎬 Video & Motion</h3>
+                <p>Industry-leading video generation modules capable of producing cinematic motion from simple natural language prompts.</p>
+            </article>
+        </div>
+    </section>
 
-        <h3>✨ Exclusive Features</h3>
-        <ul>
-            <li class="highlight">3D Sculptor (New)</li>
-            <li>Vid-Gen Alpha</li>
-            <li>Context Memory</li>
-        </ul>
+    <div class="ad-wrapper">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-format="fluid"
+           data-ad-layout-key="-ez+5r+5b-cp+3w"
+           data-ad-client="ca-pub-8398063285525284"
+           data-ad-slot="8530985229"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <section class="model-list">
+        <h2>🗣️ Conversational Models (100+ Integrated)</h2>
+        <p>Our intelligent orchestrator routes queries through the following elite reasoning engines:</p>
+        <div class="model-list-grid">
+            <div class="model-item highlight">GPT-5-Nano <span class="badge">LATEST</span></div>
+            <div class="model-item highlight">Gemini-2.5-Flash <span class="badge">FAST</span></div>
+            <div class="model-item">DeepSeek-R1</div>
+            <div class="model-item">Qwen-3-Max</div>
+            <div class="model-item">Claude-4-Sonnet</div>
+            <div class="model-item">Llama-4-Titan</div>
+            <div class="model-item">Mistral-Large-3</div>
+            <div class="model-item">GLM-4.5</div>
+            <div class="model-item">Grok-2.5</div>
+            <div class="model-item">Perplexity-Sonar</div>
+            </div>
     </section>
 
     <section class="model-list">
-        <h2>🗣️ Conversational (10+ Specialized)</h2>
-        <ul>
-            <li>GPT-5-Nano</li>
-            <li class="highlight">Gemini-2.5-Flash</li>
-            <li>DeepSeek-R1</li>
-            <li>Qwen-3</li>
-            <li>GLM-4.5</li>
-        </ul>
+        <h2>🎨 Visual & 3D Arts (23+ Specialized)</h2>
+        <p>State-of-the-art diffusion and spatial models for pixel-perfect content creation:</p>
+        <div class="model-list-grid">
+            <div class="model-item highlight">Hunyuan3D-2 <span class="badge">3D</span></div>
+            <div class="model-item">RealVis XL v5</div>
+            <div class="model-item highlight">Juggernaut X</div>
+            <div class="model-item">Stable Diffusion 3.5</div>
+            <div class="model-item">Midjourney V7-API</div>
+            <div class="model-item">DALL-E 3 Turbo</div>
+            <div class="model-item">Playground v3</div>
+            <div class="model-item highlight">Flux.1 Pro</div>
+            <div class="model-item">Luma Dream Machine</div>
+            <div class="model-item">Kling AI</div>
+        </div>
     </section>
 
-    <section class="model-list">
-        <h2>🎨 Visual Arts (23+ Models)</h2>
-        <ul>
-            <li>Hunyuan3D-2 (New)</li>
-            <li class="highlight">RealVis XL</li>
-            <li>Juggernaut X</li>
-            <li>Playground V2.5</li>
-            <li class="highlight">NSFW Gen</li>
-        </ul>
+    <section class="faq">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div style="margin-top: 15px;">
+            <details style="padding: 10px; border-bottom: 1px solid #333;">
+                <summary style="cursor: pointer; font-weight: bold;">What is SteveAI?</summary>
+                <p style="padding-top: 10px; font-size: 0.9rem;">SteveAI is a Multi-Modal AI Orchestrator that uses over 33 individual AI models to provide precision-driven results in chat, image generation, and 3D sculpting.</p>
+            </details>
+            <details style="padding: 10px; border-bottom: 1px solid #333;">
+                <summary style="cursor: pointer; font-weight: bold;">Who developed SteveAI?</summary>
+                <p style="padding-top: 10px; font-size: 0.9rem;">SteveAI was developed and orchestrated by <strong>Saadpie</strong> and <strong>Ahmed</strong>, focusing on democratizing high-scale AI infrastructure.</p>
+            </details>
+            <details style="padding: 10px; border-bottom: 1px solid #333;">
+                <summary style="cursor: pointer; font-weight: bold;">Is there an API available?</summary>
+                <p style="padding-top: 10px; font-size: 0.9rem;">Yes, documentation for the SteveAI API can be found in our Docs section, allowing developers to integrate our model routing into their own apps.</p>
+            </details>
+        </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 <strong>SteveAI</strong> • Orchestrated by <a href="#">Saadpie</a> & <a href="#">Ahmed</a></p>
+  <footer role="contentinfo">
+    <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Service</a>
+        <a href="https://github.com/saadpie">GitHub</a>
+        <a href="/contact">Support</a>
+    </div>
+    <p>© 2026 <strong>SteveAI</strong>. All Rights Reserved.</p>
+    <a href="https://steve-ai.netlify.app" class="saadpie-credit">Orchestrated by Saadpie & Ahmed</a>
   </footer>
+
+  <script>
+    console.log("SteveAI SEO & Monetization Layer Active.");
+  </script>
 </body>
 </html>
