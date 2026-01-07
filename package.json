@@ -1,0 +1,19 @@
+{
+  "name": "steve-ai-orchestrator",
+  "version": "4.0.0",
+  "description": "The world's most powerful Multi-Modal AI Orchestrator.",
+  "author": "Saadpie & Ahmed",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Saadpie1/steve-ai"
+  },
+  "keywords": [
+    "ai",
+    "orchestrator",
+    "multi-modal",
+    "gpt-5",
+    "gemini-2.5",
+    "3d-generation"
+  ]
+}
