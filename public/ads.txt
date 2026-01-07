@@ -1,9 +1,1 @@
-# Single Page Application (SPA) Routing
-/* /index.html   200
-
-# Force HTTPS for Security and SEO
-http://steve-ai.netlify.app/* https://steve-ai.netlify.app/:splat 301!
-
-# Optional: Redirect old paths to new modules
-/visuals    /image.html    301
-/sculptor   /3d            301
+google.com, pub-8398063285525284, DIRECT, f08c47fec0942fa0
