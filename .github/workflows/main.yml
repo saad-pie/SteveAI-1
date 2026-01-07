@@ -1,0 +1,17 @@
+name: SteveAI CI/CD
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Validate Files
+        run: |
+          [ -f index.html ] && echo "Index exists"
+          [ -f ads.txt ] && echo "AdSense authorized"
+          
