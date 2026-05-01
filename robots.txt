@@ -1,12 +1,16 @@
+# https://steve-ai.netlify.app/robots.txt
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
-Disallow: /private/
-Disallow: /config/
 
-User-agent: *
-Allow: /models.html
-# Hint to Google that this is the most important page after index
-Priority: /models.html 0.9
+# Disallow crawling of system or temporary files
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /build/
+Disallow: /.env
+Disallow: /api/
 
-# Link to your sitemap (Next step)
+# Host and Sitemap
+Host: https://steve-ai.netlify.app/
 Sitemap: https://steve-ai.netlify.app/sitemap.xml
