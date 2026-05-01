@@ -1,5 +1,5 @@
 # Single Page Application (SPA) Routing
-/* /index.html   200
+/* /   200
 
 # Force HTTPS for Security and SEO
 http://steve-ai.netlify.app/* https://steve-ai.netlify.app/:splat 301!
