@@ -5,7 +5,7 @@ import App from './App.tsx';
 import './index.css';
 
 // The basename must match your repository name exactly
-const basename = "/SteveAI-v4";
+const basename = "/";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
