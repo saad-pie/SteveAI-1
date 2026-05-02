@@ -30,6 +30,24 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://steve-ai.netlify.app/" />
 
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -52,6 +70,9 @@
   </head>
   <body>
     <h1 style="display:none;">SteveAI - AI Assistant by Saadpie, Ahmed Aftab, and Shawaiz Ali Yasin</h1>
+    
+    <iframe src="https://steveai-v4.vercel.app" title="SteveAI Orchestrator"></iframe>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
