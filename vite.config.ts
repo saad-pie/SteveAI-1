@@ -4,23 +4,27 @@ import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
+  const env = loadEnv(mode, '.', '');
   
   return {
-    // 1. Set base to '/' for Netlify root deployment
+    // CHANGE: Set to '/' for netlify deployment. 
+    // '/SteveAI-v4/' is only for GitHub Pages.
     base: '/', 
+    
     plugins: [react(), tailwindcss()],
+    
     define: {
-      // Netlify will inject GEMINI_API_KEY from your dashboard settings
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
     },
+    
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src'), // Standard practice points to /src
+        '@': path.resolve(__dirname, '.'),
       },
     },
+    
     server: {
-      hmr: process.env.DISABLE_HMR !== 'true',
+      // This helps with local development
       proxy: {
         '/api': {
           target: 'http://localhost:3000',
@@ -29,7 +33,8 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    // 2. Ensure the build output is clean for Netlify
+
+    // Optional: Ensure build output goes to 'dist' (Vercel's default)
     build: {
       outDir: 'dist',
     }
